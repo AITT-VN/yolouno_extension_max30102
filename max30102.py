@@ -781,7 +781,7 @@ class MAX30102(object):
                         t_s = t_us/1000000
                         f = 1/t_s
                         bpm = f * 60
-                        if bpm < MAX_BPM and bpm > MIN_BPM:
+                        if bpm < MAX_BPM:
                             t_start = ticks_us()
                             beats_history.append(bpm)                    
                             beats_history = beats_history[-MAX_HISTORY:] 
