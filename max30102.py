@@ -15,8 +15,8 @@
 #                                                                          n-elia
 
 from machine import SoftI2C
-from ustruct import unpack
-from utime import sleep_ms, ticks_diff, ticks_ms, ticks_us
+from struct import unpack
+from time import sleep_ms, ticks_diff, ticks_ms, ticks_us
 import asyncio
 from math import sqrt
 
